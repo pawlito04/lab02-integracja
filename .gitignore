@@ -1,0 +1,18 @@
+# Środowisko wirtualne
+venv/
+
+# Cache Pythona
+__pycache__/
+*.py[cod]
+
+# Baza danych (lokalna)
+db.sqlite3
+
+# Pliki IDE/edytorów
+.vscode/
+.idea/
+*.code-workspace
+
+# Systemowe
+.DS_Store
+Thumbs.db
