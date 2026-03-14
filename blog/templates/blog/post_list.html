@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog Lab02</title>
+</head>
+<body>
+    <h1>Moje posty ({{ posts.count }})</h1>
+    {% for post in posts %}
+        <article>
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.content|linebreaks }}</p>
+            <small>Autor: {{ post.author }} | {{ post.published_at }}</small>
+        </article>
+        <hr>
+    {% empty %}
+        <p>Brak opublikowanych postów.</p>
+    {% endfor %}
+</body>
+</html>
