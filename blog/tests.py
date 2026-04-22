@@ -50,3 +50,4 @@ class PostViewsTest(TestCase):
     def test_post_detail_view_uses_correct_template(self):
         response = self.client.get(f'/blog/post/{self.post.pk}/')
         self.assertTemplateUsed(response, 'blog/post_detail.html')
+        
