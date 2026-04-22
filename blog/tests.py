@@ -37,7 +37,7 @@ class PostViewsTest(TestCase):
 
     def test_post_list_view_status_code(self):
         response = self.client.get('/blog/')
-        self.assertEqual(response.status_code, 404)
+        self.assertEqual(response.status_code, 200)
 
     def test_post_list_view_uses_correct_template(self):
         response = self.client.get('/blog/')
