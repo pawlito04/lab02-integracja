@@ -7,3 +7,4 @@ class PostAdmin(admin.ModelAdmin):
     list_display = ['title', 'author', 'created_at']
     list_filter = ['published_at']
     search_fields = ['title']
+    
